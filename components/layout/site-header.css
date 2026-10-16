@@ -1,0 +1,95 @@
+.staryes-header {
+  position: absolute;
+  z-index: 5;
+  inset: 0 0 auto;
+}
+
+.staryes-header__inner {
+  display: flex;
+  width: 90%;
+  min-height: 4.875rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-inline: auto;
+  padding: 0.75rem 0;
+}
+
+.staryes-header__brand {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.staryes-header__logo-slot {
+  display: block;
+  width: clamp(5.5rem, 21vw, 12rem);
+  height: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.staryes-header__divider {
+  width: 1px;
+  height: 1.75rem;
+  flex: 0 0 auto;
+  background: var(--color-primary);
+}
+
+.staryes-header__partner {
+  color: var(--color-deep-navy);
+  font-size: clamp(0.6875rem, 1.1vw, 0.9375rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+}
+
+.staryes-header__partner > span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.staryes-header__cta {
+  min-width: clamp(8.75rem, 17vw, 13.75rem);
+  gap: 0.625rem;
+  font-size: clamp(0.75rem, 1.1vw, 0.9375rem);
+  opacity: 1;
+}
+
+@media (max-width: 63.999rem) {
+  .staryes-header {
+    position: relative;
+  }
+}
+
+@media (max-width: 39.999rem) {
+  .staryes-header__inner {
+    min-height: 4.5rem;
+    gap: 0.5rem;
+    padding-inline: 0;
+  }
+
+  .staryes-header__brand {
+    gap: 0.5rem;
+  }
+
+  .staryes-header__logo-slot {
+    width: clamp(5rem, 21vw, 6rem);
+  }
+
+  .staryes-header__divider {
+    height: 1.375rem;
+  }
+
+  .staryes-header__partner {
+    font-size: 0.6875rem;
+  }
+
+  .staryes-header__cta {
+    min-width: 7.75rem;
+    padding-inline: 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
