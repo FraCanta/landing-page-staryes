@@ -7,17 +7,31 @@ import { landingLinks } from "@/config/landing-links";
 export function Hero() {
   return (
     <section className="staryes-hero" aria-labelledby="hero-title">
-      <div className="staryes-hero__stadium" aria-hidden="true" data-asset-slot="stadium">
-        <Image
-          src="/assets/staryes/hero_stadio.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="staryes-hero__stadium-image"
-        />
+      <div
+        className="staryes-hero__stadium"
+        aria-hidden="true"
+        data-asset-slot="stadium"
+      >
+        <picture className="staryes-hero__stadium-picture">
+          <source
+            media="(max-width: 39.999rem)"
+            srcSet="/assets/staryes/hero_stadio4_mobile.png"
+          />
+          <Image
+            src="/assets/staryes/hero_stadio4.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="staryes-hero__stadium-image"
+          />
+        </picture>
       </div>
-      <div className="staryes-hero__player" aria-hidden="true" data-asset-slot="player">
+      {/* <div
+        className="staryes-hero__player"
+        aria-hidden="true"
+        data-asset-slot="player"
+      >
         <Image
           src="/assets/staryes/calciatore.png"
           alt=""
@@ -26,8 +40,12 @@ export function Hero() {
           sizes="(max-width: 639px) 58vw, (max-width: 1023px) 32vw, 28vw"
           className="staryes-hero__asset-image"
         />
-      </div>
-      <div className="staryes-hero__device" aria-hidden="true" data-asset-slot="smartphone">
+      </div>*/}
+      <div
+        className="staryes-hero__device"
+        aria-hidden="true"
+        data-asset-slot="smartphone"
+      >
         <Image
           src="/assets/staryes/phone.png"
           alt=""

@@ -13,6 +13,12 @@
   overflow: hidden;
 }
 
+.staryes-hero__stadium-picture {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
 .staryes-hero__stadium-image {
   object-fit: cover;
   object-position: center;
@@ -39,10 +45,10 @@
 
 .staryes-hero__device {
   z-index: 2;
-  top: 15%;
-  right: 5.5%;
-  bottom: -1%;
-  width: 26%;
+  top: 20%;
+  right: 25%;
+  bottom: 5%;
+  width: 30%;
 }
 
 .staryes-hero__content {
@@ -54,10 +60,7 @@
   min-height: inherit;
   align-items: center;
   margin-inline: auto;
-  padding:
-    calc(min(4rem, 6svh) + 4.875rem)
-    0
-    min(4rem, 6svh);
+  padding: calc(min(4rem, 6svh) + 4.875rem) 0 min(4rem, 6svh);
 }
 
 .staryes-hero__copy {
@@ -197,9 +200,10 @@
   }
 
   .staryes-hero__device {
-    right: 1%;
-    width: 48%;
+    right: 18%;
+    width: 65%;
     height: 20rem;
+    bottom: 4%;
   }
 
   .staryes-hero__content {
