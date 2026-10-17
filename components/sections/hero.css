@@ -80,13 +80,45 @@
   text-transform: uppercase;
 }
 
-.staryes-hero__title > span {
+.staryes-hero__title-mask {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.staryes-hero__title-line {
+  display: block;
   white-space: nowrap;
 }
 
 .staryes-hero__title-accent {
   color: var(--color-primary);
-  white-space: nowrap;
+}
+
+html[data-staryes-motion="pending"]
+  :is(
+    .staryes-header__logo-slot,
+    .staryes-header__divider,
+    .staryes-header__partner,
+    .staryes-header__cta,
+    .staryes-hero__device,
+    .staryes-hero__title-line,
+    .staryes-hero__description,
+    .staryes-hero__actions,
+    .staryes-benefits,
+    .staryes-steps,
+    .staryes-promotions,
+    .staryes-registration,
+    .staryes-information,
+    .staryes-footer
+  ) {
+  opacity: 0;
+}
+
+.staryes-header__cta:focus-visible,
+.staryes-hero__actions > a:focus-visible {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .staryes-hero__description {

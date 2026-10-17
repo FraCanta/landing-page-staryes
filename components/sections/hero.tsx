@@ -61,9 +61,17 @@ export function Hero() {
       <div className="staryes-hero__content">
         <div className="staryes-hero__copy">
           <h1 id="hero-title" className="staryes-hero__title">
-            <span>Apri il tuo conto</span>
-            <span>Staryes</span>
-            <span className="staryes-hero__title-accent">con Bar Lamanna</span>
+            <span className="staryes-hero__title-mask">
+              <span className="staryes-hero__title-line">Apri il tuo conto</span>
+            </span>
+            <span className="staryes-hero__title-mask">
+              <span className="staryes-hero__title-line">Staryes</span>
+            </span>
+            <span className="staryes-hero__title-mask">
+              <span className="staryes-hero__title-line staryes-hero__title-accent">
+                con Bar Lamanna
+              </span>
+            </span>
           </h1>
           <p className="staryes-hero__description">
             Registrati online in pochi minuti e inizia a conoscere il mondo

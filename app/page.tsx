@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/hero";
+import { LandingAnimations } from "@/components/providers/landing-animations";
 import {
   BenefitsSection,
   InformationStrip,
@@ -11,6 +12,7 @@ import {
 export default function Home() {
   return (
     <main>
+      <LandingAnimations />
       <Hero />
       <BenefitsSection />
       <RegistrationStepsSection />

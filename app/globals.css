@@ -46,7 +46,6 @@
 html {
   min-width: 20rem;
   background: var(--color-surface);
-  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
