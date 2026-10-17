@@ -227,8 +227,8 @@ export function RegistrationQrSection() {
             Inquadra <span>il QR code</span>
           </h2>
           <p>
-            Per accedere alla procedura di registrazione Staryes, utilizza il QR
-            code oppure il collegamento dedicato.
+            Per accedere alla procedura di registrazione Staryes,
+            <br /> utilizza il QR code oppure il collegamento dedicato.
           </p>
           <ActionLink
             href={landingLinks.registration}

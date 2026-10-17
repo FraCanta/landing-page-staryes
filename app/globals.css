@@ -49,6 +49,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   min-height: 100vh;
   margin: 0;

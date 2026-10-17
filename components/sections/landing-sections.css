@@ -31,9 +31,12 @@
 }
 
 .staryes-eyebrow {
+  --staryes-eyebrow-color: var(--color-primary);
+
   margin-bottom: 0.65rem;
-  color: var(--color-primary);
-  font-size: 0.6875rem;
+  color: var(--staryes-eyebrow-color);
+  font-family: var(--font-manrope), sans-serif;
+  font-size: var(--text-body);
   font-weight: 800;
   letter-spacing: 0.38em;
   line-height: 1.4;
@@ -106,7 +109,7 @@
 }
 
 .staryes-benefit-card p,
-.staryes-steps__intro > p {
+.staryes-steps__intro > p:not(.staryes-eyebrow) {
   color: var(--color-text-primary);
   font-size: var(--text-body);
   line-height: 1.45;
@@ -223,7 +226,7 @@
 }
 
 .staryes-promotions__copy p,
-.staryes-registration__copy > p {
+.staryes-registration__copy > p:not(.staryes-eyebrow) {
   max-width: 34rem;
   margin-bottom: 1.1rem;
   color: var(--color-text-primary);
@@ -279,18 +282,19 @@
 
 .staryes-registration__layout {
   display: grid;
-  grid-template-columns: minmax(17rem, 0.9fr) minmax(8.5rem, 10rem) minmax(14rem, 1.35fr);
+  grid-template-columns: minmax(17rem, 0.9fr) minmax(8.5rem, 12rem) minmax(14rem, 1.35fr);
   align-items: center;
   gap: clamp(1.5rem, 4vw, 3.5rem);
 }
 
 .staryes-registration .staryes-eyebrow {
-  color: var(--color-surface);
+  --staryes-eyebrow-color: var(--color-surface);
 }
 
 .staryes-registration h2 {
   margin-bottom: 0.8rem;
   color: var(--color-surface);
+  font-size: clamp(3rem, calc(4vw + 2rem), 5rem);
 }
 
 .staryes-registration h2 span {
@@ -298,15 +302,20 @@
   color: var(--color-cyan-accent);
 }
 
-.staryes-registration__copy > p {
-  color: color-mix(in srgb, var(--color-surface) 88%, transparent);
+.staryes-registration__copy > p:not(.staryes-eyebrow) {
+  color: var(--color-surface);
 }
 
 .staryes-registration .staryes-qr-card {
+  width: min(100%, 12rem);
+  grid-column: 2;
+  grid-row: 1;
   justify-self: center;
 }
 
 .staryes-registration__asset-slot {
+  grid-column: 3;
+  grid-row: 1;
   min-width: 0;
   min-height: 13rem;
   aspect-ratio: 2.2 / 1;
@@ -463,7 +472,7 @@
   .staryes-registration .staryes-qr-card {
     grid-column: 1;
     grid-row: 2;
-    width: min(34vw, 10rem);
+    width: min(40vw, 12rem);
     justify-self: start;
   }
 
@@ -505,9 +514,12 @@
     justify-self: stretch;
   }
 
-  .staryes-promotions .staryes-qr-card__image,
-  .staryes-registration .staryes-qr-card__image {
+  .staryes-promotions .staryes-qr-card__image {
     width: min(100%, 9rem);
+  }
+
+  .staryes-registration .staryes-qr-card__image {
+    width: min(100%, 11rem);
   }
 
   .staryes-promotions__copy > .inline-flex {
@@ -619,7 +631,7 @@
     background-position: left center;
   }
 
-  .staryes-registration__copy > p {
+  .staryes-registration__copy > p:not(.staryes-eyebrow) {
     font-size: 0.875rem;
   }
 
@@ -628,7 +640,7 @@
   }
 
   .staryes-registration .staryes-qr-card {
-    width: 10rem;
+    width: 12rem;
   }
 
   .staryes-information__grid {
