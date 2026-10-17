@@ -173,6 +173,14 @@
 }
 
 @media (min-width: 80rem) and (max-width: 89.999rem) {
+  .staryes-hero__device {
+    z-index: 2;
+    top: 20%;
+    right: 10%;
+    bottom: 5%;
+    width: 40%;
+  }
+
   .staryes-hero__title {
     font-size: clamp(4.5rem, 5.7vw, 5.2rem);
   }
